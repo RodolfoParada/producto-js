@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#contenedor-ordenes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-orden {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    border-top: 5px solid #007bff;
+}
+
+.card-orden h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+strong {
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.config input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+.btn-finalizar {
+    background-color: #28a745;
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+.preview {
+    border-left: 1px solid #ddd;
+    padding-left: 40px;
+    min-width: 200px;
+}
+
+/* Reutilizamos el estilo de las tarjetas de la respuesta anterior */
+.card-orden {
+    background: #eef2f3;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+}
