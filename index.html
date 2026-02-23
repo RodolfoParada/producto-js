@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Ventas Dinámico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Ventas</h1>
+
+    <div class="main-container">
+        <section class="config">
+            <h3>Agregar Producto a la Orden</h3>
+            <input type="text" id="nombreP" placeholder="Nombre del producto">
+            <input type="number" id="precioP" placeholder="Precio">
+            <button onclick="manejadorAgregar()">Agregar a la Lista</button>
+            <button id="btnGenerar" class="btn-finalizar" onclick="manejadorFinalizar()">Finalizar Orden</button>
+        </section>
+
+        <section class="preview">
+            <h3>Orden Actual (Máximo 5)</h3>
+            <ul id="listaPreview"></ul>
+            <p id="totalPreview">Total acumulado: $0</p>
+        </section>
+    </div>
+
+    <hr>
+    <h2>Historial de Órdenes Finalizadas</h2>
+    <div id="contenedor-ordenes"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
